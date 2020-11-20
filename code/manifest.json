@@ -1,0 +1,32 @@
+{
+    "name": "QuickSwitch",
+    "version": "0.1",
+    "description": "本插件的主要功能为实现预设条件下两个网站间的快速切换，两个文本框中可同时填网站地址，或填正则表达式及其替换规则。",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      },
+      "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+      },
+    "background": {
+        "scripts": [
+          "background.js"
+        ]
+    },
+    "commands": {
+        "toggle-tags": {
+          "suggested_key": {
+            "default": "Alt+S",
+            "mac": "MacCtrl+S"
+          },
+          "description": "Toggle Tags"
+        }
+      },
+    "permissions": ["tabs", "storage"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "manifest_version": 2
+   }
