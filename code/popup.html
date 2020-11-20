@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>替换规则配置页面</title>
+  <link rel="stylesheet" href="popup.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+  <h2 class="lapi-title">正则表达式配置</h2>
+  <ul class="Matches">
+  </ul>
+  <p></p>
+  <p></p>
+  <p></p>
+  <h2 class="lapi-title">对应替换规则</h2>
+  <ul class="Rules">
+  </ul>
+  <h2 class="lapi-title">新增</h2>
+  <p>
+    正则表达式填写模板如下：<span class="point">/^你的正则表达式$/</span></br>并需要对正则表达式中出现的斜杠进行转义。若添加表达式后仍显示“该网站未配置”，可尝试用*替换+。
+  </p>
+  <p>
+    <label><input type="text" id="addpattern" class="add" placeholder="填写要匹配的正则表达式/网站"></label>
+  </p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p>
+  <label><input type="text" id="addrule" class="add" placeholder="填写用于替换的规则/网站"></label>
+  <button class="button add-pair">+</button>
+  </p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p class="lapi-tip">按<span class="lapi-key">Alt+S</span>切换网站</p>
+</div>
+<script src="zepto.min.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
+
